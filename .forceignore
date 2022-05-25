@@ -5,6 +5,12 @@ force-app/main/default/profiles/Admin.profile
 force-app/main/default/profiles/Admin.profile-meta.xml
 package.xml
 
+# 
+# Explicitly ignoring a couple of permission sets 
+# (if they exist, then don't source compare)
+force-app/main/default/permissionsets/Functions.permissionset-meta.xml
+force-app/main/default/permissionsets/sfdcInternalInt__sfdc_evergreen_event_source.permissionset-meta.xml
+
 # LWC configuration files
 **/jsconfig.json
 **/.eslintrc.json
